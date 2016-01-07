@@ -22,3 +22,7 @@ end
 
 if names.length.odd?
     names.pop
+    names.shuffle.each_slice(2) do |pairs|
+      puts "Group: " + pairs.join (" ")
+    end
+end
