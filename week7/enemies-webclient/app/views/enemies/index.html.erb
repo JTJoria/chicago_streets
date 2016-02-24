@@ -1,0 +1,9 @@
+<h2>Enemies List</h2>
+
+<% @enemies.each do |enemy| %>
+  <h2><%= link_to enemy.full_name, "/enemies/#{enemy.id}" %></h2>
+  <h2><%= enemy.book %></h2>
+  <h2><%= enemy.color %></h2>
+  <h2>The <%= enemy.villian_name %></h2>
+  <hr>
+<% end %>
